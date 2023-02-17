@@ -1,0 +1,19 @@
+.swiper-pagination-bullet {
+  background: gray !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+}
+
+.example {
+	 height: auto;
+}
+ .example .swiper {
+	 height: 100vh;
+	 width: 100%;
+}
+ .example .swiper .swiper-pagination > .swiper-pagination-bullet {
+	 background-color: red;
+}
+ 

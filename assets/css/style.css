@@ -1,0 +1,70 @@
+@import './swiper.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    @apply bg-black text-white;
+}
+
+.container {
+    @apply flex items-center justify-center h-screen;
+}
+
+.navigation {
+    @apply fixed top-0 left-0 right-0 bottom-[auto] mt-[20px] px-16 py-10 z-[9999] flex items-center justify-center;
+}
+
+.slider-navigation {
+    @apply fixed top-0 left-0 right-[auto] bottom-0 px-6 z-[9999] flex items-center justify-center;
+}
+
+.footer {
+    @apply fixed top-[auto] left-0 right-0 bottom-0 px-16 py-10 z-[9999] mb-[20px] flex;
+}
+
+.footer svg {
+    @apply cursor-pointer transition-all hover:text-primary;
+}
+
+.sidebar {
+    @apply fixed top-0 left-[auto] right-0 bottom-0 flex items-center justify-center;
+}
+
+.center-center {
+    @apply items-center justify-center;
+}
+
+.btn {
+    @apply py-2 px-12 rounded-3xl transition-all focus:outline-none;
+}
+
+.btn-primary {
+    @apply bg-white text-black border border-white hover:bg-black hover:text-white;
+}
+
+.btn-secondary {
+    @apply bg-black text-white border border-primary hover:bg-primary hover:text-black;
+}
+
+.badge {
+    @apply px-4 py-2 bg-white rounded-3xl text-black transition-all hover:bg-primary;
+}
+
+.slider-projects {
+    @apply absolute min-w-[5%] w-auto;
+}
+
+.slider-projects-left {
+    @apply top-0 bottom-0 left-0 right-[auto] flex justify-center items-center;
+}
+
+.slider-projects-right {
+    @apply top-0 bottom-0 right-0 left-[auto] flex justify-center items-center;
+}
+
+.tooltip .tooltip-inner {
+    @apply mt-4 bg-black text-white py-2 px-4 rounded-xl font-medium z-50;
+}
