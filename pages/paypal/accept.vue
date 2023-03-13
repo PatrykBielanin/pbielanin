@@ -5,7 +5,7 @@
         <h1 class="text-lime-600">Thank you for your support!</h1>
 
         <router-link to="/">
-            <button class="btn">
+            <button class="btn btn-primary">
                 Go to pbielanin.pl
             </button>
         </router-link>

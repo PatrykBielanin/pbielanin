@@ -12,7 +12,8 @@
         <FontAwesomeIcon
             @click.prevent="open = !open"
             class="ml-auto text-3xl cursor-pointer hover:text-primary"
-            :icon="!open ? ['fas', 'bars'] : ['fas', 'star']"
+            :class="{'rotate-90': open}"
+            :icon="!open ? ['fas', 'bars'] : ['fas', 'angle-up']"
         ></FontAwesomeIcon>
 
     </div>

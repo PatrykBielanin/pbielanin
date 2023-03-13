@@ -9,7 +9,7 @@
         </p>
 
         <router-link to="/">
-            <button class="btn btn-danger">
+            <button class="btn btn-primary">
                 Go to pbielanin.pl
             </button>
         </router-link>

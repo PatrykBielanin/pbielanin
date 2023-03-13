@@ -7,12 +7,12 @@
         </div>
 
         <div class="flex mt-14 space-x-10">
-            <button class="btn btn-primary flex center-center">
+            <button class="btn btn-primary flex center-center" @click.prevent="slideTo(1)">
                 <span>PROJECTS</span>
                 <FontAwesomeIcon class="text-lg rotate-90 ml-2" :icon="['fas', 'angle-up']"></FontAwesomeIcon>
             </button>
 
-            <button class="btn btn-secondary flex center-center">
+            <button class="btn btn-secondary flex center-center" @click.prevent="openResume()">
                 <span>RESUME</span>
                 <FontAwesomeIcon class="text-lg ml-3" :icon="['fas', 'file-pdf']"></FontAwesomeIcon>
             </button>
@@ -21,9 +21,24 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex'
+
     export default {
         data() {
             return {
+            }
+        },
+        computed: {
+            ...mapGetters({
+                swiper: 'app/swiper'
+            })
+        },
+        methods: {
+            slideTo(index) {
+              return this.swiper.slideTo(index)
+            },
+            openResume(){
+                return window.open('https://pbielanin.pl/cv_eng.pdf', '_blank').focus();
             }
         }
     }

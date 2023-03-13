@@ -2,7 +2,6 @@
     <div class="relative overflow-y-hidden">
         <Navigation></Navigation>
         <SliderNavigation></SliderNavigation>
-        <!-- <Sidebar></Sidebar> -->
 
         <div class="example">
           <client-only>

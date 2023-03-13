@@ -40,14 +40,11 @@ export default {
         'faAt',
         'faAngleUp',
         'faStar',
-        'faMugHot',
-        'faCalendar',
-        'faCalendarCheck',
-        'faMoon',
-        'faSun',
+        'faStream',
         'faBars',
         'faEnvelope',
-        'faFilePdf'
+        'faFilePdf',
+        'faGlobe'
       ],
       brands: [
         'faGithub',
