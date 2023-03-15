@@ -27,7 +27,7 @@
                         desc: 'Website created for my better discord theme. Includes configuration tool for users.',
                         links: [
                             {icon: ['fab', 'github'], url: 'https://github.com/PatrykBielanin/discord-cyberpunk2077-website'},
-                            {icon: ['fas', 'globe'], url: 'https://github.com/PatrykBielanin/discord-cyberpunk2077-website'}
+                            {icon: ['fas', 'globe'], url: 'https://cyberpunk.pbielanin.pl'}
                         ],
                         preview: 'website400',
                     },
