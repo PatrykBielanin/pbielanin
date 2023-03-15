@@ -1,14 +1,10 @@
 <template>
     <div class="container flex w-[90vw]">
-        <div class="flex justify-center space-x-4">
+        <div class="flex flex-wrap justify-center gap-4 px-8">
             <template v-for="project in projects">
                 <ProjectItem :title="project.title" :desc="project.desc" :links="project.links" :preview="project.preview"/>
             </template>
-
         </div>
-        <!-- <ProjectsSlider :direction="'left'"></ProjectsSlider>
-        <ProjectsHero :title="title" :desc="desc" :links="links" :preview="preview"></ProjectsHero>
-        <ProjectsSlider :direction="'right'"></ProjectsSlider> -->
     </div>
 </template>
 

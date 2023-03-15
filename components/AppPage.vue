@@ -1,7 +1,7 @@
 <template>
     <div class="relative overflow-y-hidden">
         <Navigation></Navigation>
-        <SliderNavigation></SliderNavigation>
+        <!-- <SliderNavigation></SliderNavigation> -->
 
         <div class="example">
           <client-only>

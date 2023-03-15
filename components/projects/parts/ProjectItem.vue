@@ -1,12 +1,12 @@
 <template>
-    <div class="flex flex-col justify-start items-start border rounded-lg border-silver pb-6 w-1/3">
+    <div class="flex flex-col justify-start items-start border rounded-lg border-silver pb-6 w-1/3 transition-all hover:scale-105 hover:border-primary">
         <div class="h-1/3 mx-auto">
             <img class="w-full rounded-t-lg" :src="getProjectImage()" :alt="title + ' preview'">
         </div>
 
         <div class="flex-col mt-16 px-[5%]">
-            <h2 class="text-2xl font-semibold uppercase">{{ title }}</h2>
-            <p class="text-md mt-4">{{ desc }}</p>
+            <h2 class="text-xl font-semibold uppercase">{{ title }}</h2>
+            <p class="text-sm mt-2">{{ desc }}</p>
         </div>
 
         <div class="flex px-6 mt-auto space-x-4">

@@ -22,7 +22,7 @@ html, body {
 }
 
 .footer {
-    @apply fixed top-[auto] left-0 right-0 bottom-0 px-16 pt-10 z-[9999] pb-[60px] flex bg-black;
+    @apply fixed top-[auto] left-0 right-0 bottom-0 px-16 pt-10 z-[9999] pb-[60px] flex;
 }
 
 .footer svg {

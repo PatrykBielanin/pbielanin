@@ -1,6 +1,7 @@
 <template>
-    <div class="container flex-col">
-        <div class="flex-col center-center text-center space-y-4">
+    <div class="container flex-col py-20">
+        <div class="flex-col center-center text-center space-y-4 mt-auto">
+            <!-- <h1>XD</h1> -->
             <h1 class="text-6xl">Hi</h1>
             <h1 class="text-6xl">I'm <span class="font-semibold text-primary">Patrick</span></h1>
             <h1 class="text-6xl font-thin">front-end developer</h1>
@@ -16,6 +17,19 @@
                 <span>RESUME</span>
                 <FontAwesomeIcon class="text-lg ml-3" :icon="['fas', 'file-pdf']"></FontAwesomeIcon>
             </button>
+        </div>
+
+        <div class="flex flex-col items-center space-y-4 mt-auto">
+            <p class="-rotate-90">scroll</p>
+            <div class="w-[1px] h-[24px] bg-white">
+            </div>
+            <!-- <i class="fas fa-mouse"></i> -->
+            <!-- <font-awesome-icon icon="fas fa-mouse" /> -->
+            <!-- <FontAwesomeIcon class="text-lg text-white" :icon="['fas', 'mouse']"></FontAwesomeIcon> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-[18px]">
+                <path fill="#FFFFFF" d="M0 352a160 160 0 0 0 160 160h64a160 160 0 0 0 160-160V224H0zM176 0h-16A160 160 0 0 0 0 160v32h176zm48 0h-16v192h176v-32A160 160 0 0 0 224 0z"/>
+            </svg>
+
         </div>
     </div>
 </template>

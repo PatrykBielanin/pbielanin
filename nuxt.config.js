@@ -44,7 +44,8 @@ export default {
         'faBars',
         'faEnvelope',
         'faFilePdf',
-        'faGlobe'
+        'faGlobe',
+        'faMouse'
       ],
       brands: [
         'faGithub',
