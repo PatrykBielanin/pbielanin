@@ -1,6 +1,6 @@
 <template>
-    <div class="container flex w-[90vw]">
-        <div class="flex flex-wrap justify-center gap-4 px-8 bg-bubble-gum lg:bg-black">
+    <div class="container flex">
+        <div class="flex flex-wrap flex-col lg:flex-row justify-center gap-4 px-4">
             <template v-for="project in projects">
                 <ProjectItem :title="project.title" :desc="project.desc" :links="project.links" :preview="project.preview"/>
             </template>
@@ -24,7 +24,7 @@
                     },
                     {
                         title: "Better discord theme website",
-                        desc: 'Website created for my better discord theme. Includes configuration tool for users to modify theme and FAQ section with answers to mostly asked question.',
+                        desc: 'Website created for my better discord theme. Includes configuration tool for users.',
                         links: [
                             {icon: ['fab', 'github'], url: 'https://github.com/PatrykBielanin/discord-cyberpunk2077-website'},
                             {icon: ['fas', 'globe'], url: 'https://github.com/PatrykBielanin/discord-cyberpunk2077-website'}

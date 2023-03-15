@@ -1,9 +1,9 @@
 <template>
     <div class="navigation">
-        <ul class="flex flex-col center-center space-x-32 grow h-screen bg-black lg:bg-transparent lg:h-auto lg:flex-row" v-if="open">
+        <ul class="flex flex-col center-center gap-12 lg:gap-48 grow h-screen lg:h-auto lg:flex-row divide-y divide-silver/25 lg:divide-y-0" v-if="open">
                 <li
                     v-for="(item, index) in items"
-                    class="cursor-pointer transition-all hover:text-primary hover:line-through"
+                    class="h-1/4 w-full lg:w-auto lg:h-auto cursor-pointer transition-all hover:text-primary hover:line-through flex center-center"
                     @click="slideTo(index)"
                 >
                     {{ item.name }}

@@ -1,7 +1,6 @@
 <template>
     <div class="relative overflow-y-hidden">
         <Navigation></Navigation>
-        <!-- <SliderNavigation></SliderNavigation> -->
 
         <div class="example">
           <client-only>
@@ -20,7 +19,7 @@
                 <component :is="slide.component"></component>
               </swiper-slide>
 
-              <div class="swiper-pagination" slot="pagination"></div>
+              <!-- <div class="swiper-pagination" slot="pagination"></div> -->
             </swiper>
           </client-only>
         </div>
@@ -47,10 +46,10 @@
           centeredSlides: true,
           mousewheel: true,
           speed: 500,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          }
+          // pagination: {
+          //   el: '.swiper-pagination',
+          //   clickable: true
+          // }
         }
       }
     },
@@ -65,30 +64,13 @@
       }),
       onSwiperRedied(swiper) {
         this.setGlobalSwiper({ payload: { swiper: swiper }})
-
-        console.log('Swiper redied!', swiper)
       },
-      onSwiperSlideChangeTransitionStart() {
-        console.log('SwiperSlideChangeTransitionStart!', this.swiper)
-      },
-      onSwiperClickSlide(index, reallyIndex) {
-        console.log('Swiper click slide!', reallyIndex)
-      }
+      // onSwiperSlideChangeTransitionStart() {
+      //   console.log('SwiperSlideChangeTransitionStart!', this.swiper)
+      // },
+      // onSwiperClickSlide(index, reallyIndex) {
+      //   console.log('Swiper click slide!', reallyIndex)
+      // }
     }
   }
 </script>
-
-<style lang="scss" scoped>
-  .example {
-    height: auto;
-    .swiper {
-      height: 100vh;
-      width: 100%;
-      .swiper-pagination {
-        > .swiper-pagination-bullet {
-          background-color: red;
-        }
-      }
-    }
-  }
-</style>

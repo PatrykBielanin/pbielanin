@@ -1,15 +1,15 @@
 <template>
-    <div class="flex flex-col justify-start items-start border rounded-lg border-silver pb-6 w-1/3 transition-all hover:scale-105 hover:border-primary">
-        <div class="h-1/3 mx-auto hidden md:block">
+    <div class="flex flex-row lg:flex-col center-center lg:start-start h-[100%] lg:h-[400px] border rounded-lg border-silver lg:pb-6 w-full lg:w-[calc(33%-1rem)] transition-all hover:scale-105 hover:border-primary">
+        <div class="mx-auto hidden lg:block">
             <img class="w-full rounded-t-lg" :src="getProjectImage()" :alt="title + ' preview'">
         </div>
 
-        <div class="flex-col mt-16 px-[5%]">
-            <h2 class="text-xl font-semibold uppercase">{{ title }}</h2>
+        <div class="flex-col mt-0 py-2 sm:py-6 lg:mt-4 lg:py-0 px-[5%]">
+            <h2 class="text-md sm:text-xl font-semibold uppercase text-silver">{{ title }}</h2>
             <p class="text-sm mt-2">{{ desc }}</p>
         </div>
 
-        <div class="flex px-6 mt-auto space-x-4">
+        <div class="flex flex-col lg:flex-row px-6 mr-auto mt-[0px] lg:mt-auto gap-4">
             <template v-for="link in links">
                 <a :href="link.url" target="_blank" class="transition-all hover:text-primary">
                     <FontAwesomeIcon
