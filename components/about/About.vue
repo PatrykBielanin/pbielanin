@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 w-full hidden lg:block">
+        <div class="space-y-4 w-full hidden md:block">
             <h2 class="font-semibold text-primary text-xl lg:text-3xl">Contact</h2>
             <p class="text-[14px] lg:text-[16px]">If you have any feedback or you need some help, please reach out to me at my social medias which you can find in the left bottom corner of this website.</p>
         </div>
