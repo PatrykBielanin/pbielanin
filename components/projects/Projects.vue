@@ -1,6 +1,6 @@
 <template>
     <div class="container flex w-[90vw]">
-        <div class="flex flex-wrap justify-center gap-4 px-8">
+        <div class="flex flex-wrap justify-center gap-4 px-8 bg-bubble-gum lg:bg-black">
             <template v-for="project in projects">
                 <ProjectItem :title="project.title" :desc="project.desc" :links="project.links" :preview="project.preview"/>
             </template>

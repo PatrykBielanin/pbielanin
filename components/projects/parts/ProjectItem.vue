@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col justify-start items-start border rounded-lg border-silver pb-6 w-1/3 transition-all hover:scale-105 hover:border-primary">
-        <div class="h-1/3 mx-auto">
+        <div class="h-1/3 mx-auto hidden md:block">
             <img class="w-full rounded-t-lg" :src="getProjectImage()" :alt="title + ' preview'">
         </div>
 

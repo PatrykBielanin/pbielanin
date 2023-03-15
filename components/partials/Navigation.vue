@@ -1,6 +1,6 @@
 <template>
     <div class="navigation">
-        <ul class="flex center-center space-x-32 grow" v-if="open">
+        <ul class="flex flex-col center-center space-x-32 grow h-screen bg-black lg:bg-transparent lg:h-auto lg:flex-row" v-if="open">
                 <li
                     v-for="(item, index) in items"
                     class="cursor-pointer transition-all hover:text-primary hover:line-through"
@@ -9,13 +9,13 @@
                     {{ item.name }}
                 </li>
         </ul>
+
         <FontAwesomeIcon
             @click.prevent="open = !open"
             class="ml-auto text-3xl cursor-pointer hover:text-primary"
             :class="{'rotate-90': open}"
             :icon="!open ? ['fas', 'bars'] : ['fas', 'angle-up']"
         ></FontAwesomeIcon>
-
     </div>
 </template>
 
