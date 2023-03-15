@@ -26,7 +26,7 @@ html, body {
 }
 
 .footer {
-    @apply fixed top-[auto] left-0 right-0 bottom-0 px-6 lg:px-16 pt-[10px] z-[9000] pb-[10px] flex w-full lg:bg-black lg:w-auto justify-between lg:justify-start lg:pb-[60px] lg:pt-10;
+    @apply fixed top-[auto] left-0 right-0 bottom-0 px-6 lg:px-16 pt-[10px] z-[9000] pb-[10px] flex w-full lg:w-auto justify-between lg:justify-start lg:pb-[60px] lg:pt-10;
 }
 
 .footer svg {

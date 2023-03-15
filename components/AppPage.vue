@@ -42,7 +42,8 @@
         swiperOptions: {
           loop: false,
           direction: 'vertical',
-          slidesPerView: 'auto',
+          slidesPerView: 1,
+          initialSlide: 0,
           centeredSlides: true,
           mousewheel: true,
           speed: 500,
