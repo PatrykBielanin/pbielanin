@@ -1,6 +1,6 @@
 <template>
     <div class="container flex">
-        <div class="flex flex-wrap flex-col lg:flex-row justify-center gap-4 px-4">
+        <div class="flex flex-wrap flex-col lg:flex-row justify-center gap-4 px-6">
             <template v-for="project in projects">
                 <ProjectItem :title="project.title" :desc="project.desc" :links="project.links" :preview="project.preview"/>
             </template>

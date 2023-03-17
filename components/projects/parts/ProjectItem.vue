@@ -4,7 +4,7 @@
             <img class="w-full rounded-t-lg" :src="getProjectImage()" :alt="title + ' preview'">
         </div>
 
-        <div class="flex-col mt-0 py-2 sm:py-6 lg:mt-4 lg:py-0 px-[5%]">
+        <div class="flex-col mt-0 py-2 sm:py-6 lg:mt-4 lg:py-0 px-[5%] grow">
             <h2 class="text-md sm:text-xl font-semibold uppercase text-silver">{{ title }}</h2>
             <p class="text-sm mt-2">{{ desc }}</p>
         </div>
