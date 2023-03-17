@@ -45,7 +45,8 @@ export default {
         'faEnvelope',
         'faFilePdf',
         'faGlobe',
-        'faMouse'
+        'faMouse',
+        'faHandPointer'
       ],
       brands: [
         'faGithub',

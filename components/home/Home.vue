@@ -19,12 +19,14 @@
         </div>
 
         <div class="flex flex-col items-center space-y-4 mt-auto">
-            <p class="text-sm lg:text-base -rotate-90">scroll</p>
+            <p class="text-sm lg:text-base -rotate-90 hidden md:block">scroll</p>
+            <p class="text-sm lg:text-base -rotate-90 block md:hidden">slide</p>
             <div class="w-[1px] h-[24px] bg-white">
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-[14px] sm:w-[18px]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-[14px] sm:w-[18px] hidden md:block">
                 <path fill="#FFFFFF" d="M0 352a160 160 0 0 0 160 160h64a160 160 0 0 0 160-160V224H0zM176 0h-16A160 160 0 0 0 0 160v32h176zm48 0h-16v192h176v-32A160 160 0 0 0 224 0z"/>
             </svg>
+            <FontAwesomeIcon class="text-xl block md:hidden rotate-180" :icon="['fas', 'hand-pointer']"></FontAwesomeIcon>
         </div>
     </div>
 </template>
