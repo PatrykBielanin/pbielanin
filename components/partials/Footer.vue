@@ -24,6 +24,7 @@
     export default {
         data() {
             return {
+                resumeLink: 'https://cloud.pbielanin.pl/pbielanin/cv_eng.pdf',
                 icons: [
                     {
                         icon: ['fab', 'github'],
@@ -60,7 +61,7 @@
         },
         methods: {
             openResume(){
-                return window.open('https://pbielanin.pl/cv_eng.pdf', '_blank').focus();
+                return window.open(this.resumeLink, '_blank').focus();
             },
             copyToClipboard(){
                 navigator.clipboard.writeText('bielak#2500')

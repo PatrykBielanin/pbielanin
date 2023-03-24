@@ -37,6 +37,7 @@
     export default {
         data() {
             return {
+                resumeLink: 'https://cloud.pbielanin.pl/pbielanin/cv_eng.pdf'
             }
         },
         computed: {
@@ -49,7 +50,7 @@
               return this.swiper.slideTo(index)
             },
             openResume(){
-                return window.open('https://pbielanin.pl/cv_eng.pdf', '_blank').focus();
+                return window.open(this.resumeLink, '_blank').focus();
             }
         }
     }
